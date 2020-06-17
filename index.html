@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="jumbotron" style="height: 1000px;">
+        <h1 class="display-3" id="header">Coding Quiz: Javascript Fundamentals</h1>
+        <p class="lead" id="text-box">Hi! Welcome to the coding Trivia Showdown, You will get 60 seconds to asnwer all
+            ten questions.
+            If you get one wrong you lose 5 seconds. When you get one right your score increases by 1. Good luck and
+            have fun! Click start to begin.</p>
+        <p>Time Remaining: <span id="time-remaining"></span></p>
+        <p>Question Number: <span id="question-number"></span></p>
+        <div id="answer-container">
+            <div class="btn-group">
+                <button>A: <span id="asnwerA"></span></button>
+                <button>B: <span id="answerB"></span></button>
+                <button>C: <span id="answerC"></span></button>
+                <button>D: <span id="answerD"></span></button>
+            </div>
+        </div>
+        <hr class="my-2">
+        <p class="lead" id="start-button">
+            <a class="btn btn-primary btn-lg" id="start" onclick="startGame()" role="button">Start</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+</head>

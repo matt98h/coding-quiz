@@ -1,0 +1,19 @@
+#text-box{
+
+}
+#header{
+
+}
+#start-button{
+justify-content: center;
+}
+#start-button{
+    display:none;
+}
+.col-sm-4{
+    display: inline;
+}
+div #answer-container{
+    display: block;
+    align-content: center;
+}
