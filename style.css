@@ -1,19 +1,6 @@
-#text-box{
-
-}
-#header{
-
-}
-#start-button{
-justify-content: center;
-}
-#start-button{
+#answers{
     display:none;
 }
-.col-sm-4{
-    display: inline;
-}
-div #answer-container{
-    display: block;
-    align-content: center;
+#question-number{
+    float: right;
 }

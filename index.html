@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -22,26 +22,27 @@
 
 
 
-    <div class="jumbotron" style="height: 1000px;">
+    <div class="jumbotron" style="height: 500px;">
         <h1 class="display-3" id="header">Coding Quiz: Javascript Fundamentals</h1>
         <p class="lead" id="text-box">Hi! Welcome to the coding Trivia Showdown, You will get 60 seconds to asnwer all
             ten questions.
             If you get one wrong you lose 5 seconds. When you get one right your score increases by 1. Good luck and
             have fun! Click start to begin.</p>
-        <p>Time Remaining: <span id="time-remaining"></span></p>
-        <p>Question Number: <span id="question-number"></span></p>
-        <div id="answer-container">
-            <div class="btn-group">
-                <button>A: <span id="asnwerA"></span></button>
-                <button>B: <span id="answerB"></span></button>
-                <button>C: <span id="answerC"></span></button>
-                <button>D: <span id="answerD"></span></button>
-            </div>
-        </div>
+        <p class="col-6">Time Remaining: <span id="time-remaining"></span></p>
+        <p class="col-6">Question Number: <span id="question-number"></span></p>
+
         <hr class="my-2">
         <p class="lead" id="start-button">
-            <a class="btn btn-primary btn-lg" id="start" onclick="startGame()" role="button">Start</a>
+            <a class="btn btn-primary btn-lg" id="start" onclick="startGame(), answersAppear()" role="button">Start</a>
         </p>
+
+        <div class="btn-group" id="answers">
+            <button>A: <span id="asnwerA" onclick="countQuestionNumber()"></span></button>
+            <button>B: <span id="answerB" onclick="countQuestionNumber()"></span></button>
+            <button>C: <span id="answerC" onclick="countQuestionNumber()"></span></button>
+            <button>D: <span id="answerD" onclick="countQuestionNumber()"></span></button>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
